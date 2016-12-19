@@ -1,0 +1,9 @@
+{% if album_all%}
+<ul>
+    {% for album in album_all %}
+    <li><a href="/myfirstapp/{{ album.id }}/">{{album.album_title}}</a></li>
+    {% endfor %}
+</ul>
+{% else %}
+    <h1>You don't have any albums.</h1>
+{% endif %}
